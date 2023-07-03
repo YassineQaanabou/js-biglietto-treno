@@ -1,24 +1,19 @@
-function submitForm(event) {
-    event.preventDefault();
-
-    console.log("Il FORM FUNZIONA!");
-
-let name = document.getElementById("inputName").Value;
-let km = parseInt (document.getElementById("inputKm").Value);
-let age = document.getElementById("selectAge").Value;
+let name = prompt("inserisci il tuo nome");
+let km = parseInt(prompt("inserisci i km che vuoi percorrere"));
+let age = prompt("inserisci la tua età");
 
 let price = km * 0.21;
 
-if ( age = "Underage") {
+if ( age  <=18) {
     let finalPrice = price - (price*0.20);
-} else if ( age = "Over65") {
+    console.log(finalPrice);
+} else if ( age >=65) {
     let finalPrice = price - (price*0.40);
+    console.log(finalPrice);
 } else {
-    let finalPrice = price
+    let finalPrice = price;
+    console.log(finalPrice);
 }
 
-document.getElementById("finalprice").innerHTML = finalPrice;
 
-console.log(finalPrice);
 
-};
