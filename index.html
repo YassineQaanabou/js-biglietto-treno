@@ -21,26 +21,27 @@
             <h1 class="text-white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
               <div class="card text-center">
                 <div class="card-body">
-                  <form>
+
+                  <form onsubmit="submitForm(event)">
           
           
                 <div class="row  align-items-center">
           
                  
                     <div class="mb-3 col-3 ">
-                      <label for="InputName" class="form-label">Nome e Cognome</label>
-                      <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp">
+                      <p>Nome e Cognome</p>
+                      <input type="text" class="form-control" id="inputName">
                     </div>
                     <div class="mb-3 col-3 ">
-                      <label for="InputKm" class="form-label">Km da percorrere</label>
+                      <p>Km da percorrere</p>
                       <input type="text" class="form-control" id="inputKm">
                     </div>
             
                  
           
                     <div class="mb-3 col-3">
-                      <label for="selectCity" class="form-label">Fascia d'età</label>
-                      <select id="selectCity" class="form-select">
+                      <p>Fascia d'età</p>
+                      <select id="selectAge" class="form-select">
                           <option selected="">Seleziona</option>
                           <option value="Underage">Minorenne</option>
                           <option value="Overage">Maggiorenne</option>
@@ -49,8 +50,8 @@
                   </div>
                   </div>
           
-                  <button type="submit" value="clck" onclick="submitForm" href="#" class="btn btn-primary">Genera</button>
-                  <button href="#" class="btn btn-primary">Annulla</button>
+                  <button type="submit" id="button" class="btn btn-primary">Genera</button>
+                  <button class="btn btn-primary">Annulla</button>
                 </form>
                 </div>
               </div>

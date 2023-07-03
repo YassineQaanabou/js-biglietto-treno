@@ -1,9 +1,11 @@
 function submitForm(event) {
     event.preventDefault();
-    
-let name = prompt(document.getElementById("inputName").Value);
-let km = parseInt (prompt(document.getElementById("inputKm").Value));
-let age = prompt(document.getElementById("selectAge").Value);
+
+    console.log("Il FORM FUNZIONA!");
+
+let name = document.getElementById("inputName").Value;
+let km = parseInt (document.getElementById("inputKm").Value);
+let age = document.getElementById("selectAge").Value;
 
 let price = km * 0.21;
 
@@ -16,6 +18,7 @@ if ( age = "Underage") {
 }
 
 document.getElementById("finalprice").innerHTML = finalPrice;
+
 console.log(finalPrice);
 
-}
+};
